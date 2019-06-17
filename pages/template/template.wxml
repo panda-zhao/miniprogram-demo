@@ -1,0 +1,24 @@
+<!--pages/template/template.wxml-->
+<view class='wrap'>
+  <view class='h2'>使用模板功能</view>
+
+  <!-- 定义模板 -->
+  <template name='newSetMeal'>
+    <view class='set_meal_wrap'  wx:for="{{templateData}}" wx:key="{{index}}">
+      <view class='form_item'>
+        <label>套餐名称</label>
+        <input placeholder="比如：有限责任公司注册" id="{{index}}" name='name' bindblur='bindSetMealName'/>
+      </view>
+      <view class='form_item'>
+        <label>套餐价格</label>
+        <input placeholder="单位：元，如 2000"  id="{{index}}" name='price' type='number' bindblur='bindSetMealPrice'/>
+      </view>
+    </view>
+  </template>
+
+  <template is="newSetMeal" data="{{templateData}}"/>
+
+  <button bindtap='bindAddSetMeal'>增加套餐+</button>
+
+  <button bindtap='submitForm' type='primary' style='margin-top:20rpx;'>获取表单值</button>
+</view>

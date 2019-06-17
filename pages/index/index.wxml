@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class='wrap'>
+  <navigator url='/pages/layout/layout' open-type='navigate'>布局</navigator>
+  <!-- <navigator url='/pages/swiper/swiper' open-type='navigate'>swiper</navigator> -->
+  <navigator url='/pages/form/form' open-type='navigate'>表单</navigator>
+  <navigator url='/pages/picker/picker' open-type='navigate'>滚动选择器</navigator>
+  <navigator url='/pages/input/input' open-type='navigate'>input</navigator>
+  <navigator url='/pages/upload/upload' open-type='navigate'>上传</navigator>
+  <navigator url='/pages/address/address' open-type='navigate'>地址</navigator>
+  <navigator url='/pages/map/map' open-type='navigate'>地图</navigator>
+  <navigator url='/pages/template/template' open-type='navigate'>模板</navigator>
+  <navigator url='/pages/websocket/websocket' open-type='navigate'>websocket通讯</navigator>
+</view>

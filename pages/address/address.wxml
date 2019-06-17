@@ -1,0 +1,41 @@
+<!--pages/address/address.wxml-->
+<view class="weui-cells weui-cells_after-title">
+  <view class='h2'>address</view>
+  <view class="weui-btn-area">
+    <button class='weui-btn' bindtap='chooseAddress'>获取当前位置信息</button>
+  </view>
+  <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">位置名称</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{name}}</view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">详细地址</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{address}}</view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">纬度</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{latitude}}</view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">经度</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{longitude}}</view>
+  </view>
+
+  <!-- <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">公司名称</view>
+    </view>
+    <view class="weui-cell__bd">
+      <button class='weui-btn' bindtap='openLocation'>使用地图查看位置</button>
+    </view>
+  </view> -->
+  
+</view>

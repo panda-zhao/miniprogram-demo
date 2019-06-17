@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/webview/webview",
+    "pages/index/index",
+    "pages/layout/layout",
+    "pages/form/form",
+    "pages/input/input",
+    "pages/swiper/swiper",
+    "pages/map/map",
+    "pages/template/template",
+    "pages/logs/logs",
+    "pages/upload/upload",
+    "pages/address/address",
+    "pages/picker/picker",
+    "pages/websocket/websocket",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "wechat-miniprogress",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#169bd5",
+    "list": [
+      {
+        "pagePath": "pages/webview/webview",
+        "text": "demo",
+        "iconPath": "images/uesr.png",
+        "selectedIconPath": "images/user_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_active.png"
+      },
+      {
+        "pagePath": "pages/upload/upload",
+        "text": "上传",
+        "iconPath": "images/game.png",
+        "selectedIconPath": "images/game_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

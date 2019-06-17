@@ -1,0 +1,22 @@
+<!--pages/swiper/swiper.wxml-->
+<view class='h2'>轮播</view>
+
+<swiper 
+indicator-dots
+indicator-color="rgba(0, 0, 0, .3)"
+indicator-active-color="#000000"
+autoplay
+interval="3000"
+current="0"
+display-multiple-items='1'
+style='height:480rpx;'
+>
+  <block wx:for="{{imgUrls}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}" mode='scaleToFill' style='width:100%;height:100%;'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view>swiper默认高度150px</view>
+<view>图片默认高度320px,高度240px</view>

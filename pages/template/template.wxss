@@ -1,0 +1,29 @@
+/* pages/template/template.wxss */
+.set_meal_wrap,.fixed_price_wrap{
+  width: 700rpx;
+  padding: 20rpx 0;
+  border: 1px solid #ccc;
+  margin-bottom: 20rpx;
+}
+
+/* 表单组件 */
+.form_item{
+  display: flex;
+  margin: 20rpx auto;
+}
+.form_item>label{
+  width: 160rpx;
+  line-height: 80rpx;
+  text-align: right;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  flex: none/*即使存在剩余空间也不放大缩小*/ 
+}
+.form_item input{
+  box-sizing: border-box;
+  width: 450rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 5px;
+  border: 1px dashed #ccc;
+}

@@ -1,0 +1,14 @@
+/**index.wxss**/
+.wx-box-bg{
+  
+  margin-bottom: 20rpx;
+  padding-bottom: 10rpx;
+}
+
+navigator{
+  background: #fff;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  color: #169bd5;
+  border-top: 1px solid;
+}

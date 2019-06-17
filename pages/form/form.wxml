@@ -1,0 +1,58 @@
+<!--pages/form/form.wxml-->
+<view class='wrap'>
+  <view class='h2'>表单相关组件</view>
+
+  <view>1、input输入框</view>
+  <view class='form_item'>
+    <label>名字</label>
+    <input placeholder="例如：张三"  maxlength='10' value='{{INPUT_VALUE}}' bindinput="bindKeyInput" bindblur="bindblur"/>
+  </view>
+  <view style='margin-bottom:20rpx;'>当前输入的是：{{INPUT_VALUE}}</view>
+
+
+  <view>2、单选按钮</view>
+  <view class='form_item'>
+    <label>单选按钮</label>
+    <radio-group bindchange="radioChange">
+      <label for='type1'><radio id="type1" value='1' color="#169bd5" checked='true'/>选项1</label>
+      <label for='type2'><radio id="type2" value='2' color="#169bd5"/>选项2</label>
+      <label for='type3'><radio id="type3" value='3' color="#169bd5"/>选项3</label>
+    </radio-group>
+  </view>
+
+  <view>3、复选按钮</view>
+  <view class='form_item'>
+    <label>服务收费</label>
+    <checkbox-group bindchange="checkboxChange">
+      <label for='checkbox1'><checkbox id="checkbox1" value="001" color="#169bd5"/>美国</label>
+      <label for='checkbox2'><checkbox id="checkbox2" value="002" color="#169bd5" checked="true" />中国</label>
+      <label for='checkbox3'><checkbox id="checkbox3" value="003" color="#169bd5"/>巴西</label>
+      <label for='checkbox4'><checkbox id="checkbox4" value="004" color="#169bd5"/>日本</label>
+    </checkbox-group>
+  </view>
+  
+
+  <view>4、上传图片</view>
+  <view class='form_item'>
+    <label>单图上传</label>
+    <image wx:if="{{PREVIEW_IMG !== ''}}" src='{{PREVIEW_IMG}}' class='upload_previewImg'/>
+    <view class='upload' hover-class="upload_active" bindtap='uploadImg'>+</view>
+  </view>
+
+  <view class='form_item'>
+    <label>多图上传</label>
+    <view class='flex-wrap'>
+      <view wx:if="{{ PREVIEW_IMGS.length !== 0 }}" wx:for="{{PREVIEW_IMGS}}" wx:key="{{index}}">
+        <image src='{{item}}' class='upload_previewImg'></image>
+      </view>
+      <view class='upload' hover-class="upload_active" bindtap='uploadImgs'>+</view>
+    </view>
+  </view>
+
+  <button class='blue_button' bindtap='submitForm'>提交表单</button>
+
+
+
+
+
+</view>

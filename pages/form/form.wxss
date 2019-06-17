@@ -1,0 +1,56 @@
+/* pages/form/form.wxss */
+/* 表单组件 */
+.form_item{
+  display: flex;
+  margin: 20rpx auto;
+}
+.form_item>label{
+  width: 160rpx;
+  line-height: 80rpx;
+  text-align: right;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  flex: none/*即使存在剩余空间也不放大缩小*/ 
+}
+.form_item input{
+  box-sizing: border-box;
+  width: 450rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 5px;
+  border: 1px dashed #ccc;
+}
+
+/* 单、复 选框 */
+radio-group,checkbox-group{
+  display: flex;
+  align-items: center;/*交叉轴(Y轴)的中点对齐*/
+  flex-wrap: wrap;/*超出换行，第一行在上方*/
+}
+radio-group>label,checkbox-group>label{
+  margin-right: 10rpx;
+}
+
+
+
+/* 4.单图上传 */
+.upload{
+  box-sizing: border-box;
+  width: 160rpx;
+  height: 160rpx;
+  font-size: 100rpx;
+  text-align: center;
+  line-height: 156rpx;
+  color: #ccc;
+  border: 1px dashed #ccc;
+}
+.upload_active{
+  color: #169bd5;
+  border-color: #169bd5;
+}
+.upload_previewImg{
+  width: 160rpx;
+  height: 160rpx;
+  box-sizing: border-box;
+  border: 1px dashed #ccc;
+}
